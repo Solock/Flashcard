@@ -7,7 +7,11 @@ function InputCard(props :any) {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    alert(`The answer you entered was: ${answer}`);
+    if (answer === "Answer 1") {
+      alert(`Nice Job, its the right answer: ${answer}`);
+    } else {
+      alert(`OOF SIZE METER !  Wrong answer: ${answer}`)
+    }
   }
 
 
